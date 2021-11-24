@@ -1,0 +1,30 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+  user-select: none;
+
+  &-button {
+    border: solid 1px #996;
+    border-radius: 4px;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    background-color: #F5F5F5;
+    transition: background-color .3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #DDD;
+    }
+  }
+
+  &-popup {
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    box-shadow: 0 3px 8px rgba(20, 20, 20, .2);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    z-index: 12;
+  }
+}
